@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive web header</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -11,31 +14,31 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Responsive nav bar</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <ul class="logo_list">
-          <li id="logo"><i class="fas fa-ice-cream"></i></li>
-          <li id="logo_text">DreamCoding</li>
-          <li id="bar_logo"><i class="fas fa-bars"></i></li>
-        </ul>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-accusoft"></i>
+        <a href="">DreamCoding</a>
       </div>
-      <div class="navbar">
-        <ul class="navbar_list">
-          <li class="navbar__meunu">Home</li>
-          <li class="navbar__meunu">Gallery</li>
-          <li class="navbar__meunu">Weddings</li>
-          <li class="navbar__meunu">FAQ</li>
-          <li class="navbar__meunu">Bookings</li>
-        </ul>
-      </div>
-      <div class="social">
-        <ul>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-facebook-f"></i></li>
-        </ul>
-      </div>
+      <ul class="navbar__menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Weddings</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Bookings</a></li>
+      </ul>
+      <ul class="navbar__icons">
+        <li>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+      </ul>
+      <a class="navbarBtn" href="#"><i class="fas fa-bars"></i></a>
     </nav>
   </body>
 </html>
